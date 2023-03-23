@@ -7,13 +7,6 @@ const ingredients = [
   "Condiments",
 ];
 
-// const option = ingredients[0];
-// console.log(option);
-
-// const liEl = document.createElement("li");
-// liEl.classList.add("item");
-// liEl.textContent = option;
-// console.log(liEl);
 const ingredientsContainerEl = document.querySelector("#ingredients");
 
 const elements = [];
@@ -25,5 +18,13 @@ for (let i = 0; i < ingredients.length; i += 1) {
   elements.push(liEl);
 }
 console.log(elements);
-
 ingredientsContainerEl.append(...elements);
+// const elements = ingredientsContainerEl.map((option) => {
+//   const liEl = document.createElement("li");
+//   liEl.classList.add("item");
+//   liEl.textContent = option;
+
+//   return elements;
+// });
+// console.log(elements);
+// ingredientsContainerEl.append(...elements);
